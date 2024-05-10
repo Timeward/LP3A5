@@ -1,0 +1,23 @@
+Aula 10/05/2024
+STREAM
+*Similar a lista, mas potencialmente infinito
+*Criação
+*Transformação(Pipelines) - Map, Filter, Reduce
+*Terminação - Reduce
+ex 1: 
+myStream
+    sorted()
+    skip(3)
+    limit(10)
+    toArray();
+
+ex2:
+data.stream()
+    map(s -> s+10)
+    filter(x -> x >= 20)
+    sum()
+
+FUNCTION
+CONSUMER
+SUPPLIER
+PREDICATE
