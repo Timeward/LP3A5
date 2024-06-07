@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.stream.Stream;
 
 public class StreamDemo2 {
@@ -13,12 +14,12 @@ public class StreamDemo2 {
         //     .count();
         // System.out.println("O número de pessoas com mais de 80kg é"+ wcount);
 
-        // List<Person> tallPeople = db
-        //     .filter(h -> h.height >= 1.75)
-        //     .toList();
-        // for (Person e : tallPeople) {
-        //     System.out.println(e.name);
-        // }
+        List<Person> tallPeople = db
+            .filter(h -> h.height >= 1.75)
+            .toList();
+        for (Person e : tallPeople) {
+            System.out.println(e.name);
+        }
 
         // long highBMI = db
         //     .map(p -> p.weight / (p.height * p.weight))
@@ -26,9 +27,9 @@ public class StreamDemo2 {
         //     .count();
         //     System.out.println(highBMI+" pessoas tem o IMC maior que 25");
 
-        long oName = db
-            .filter(o -> o.name.contains("oO"))
-            .count();
-            System.out.println(oName+" pessoas tem 'o' no nome");
+        // long oName = db
+        //     .filter(o -> o.name.contains("oO"))
+        //     .count();
+        //     System.out.println(oName+" pessoas tem 'o' no nome");
     }
 }

@@ -4,7 +4,7 @@ import java.util.Optional;
 import java.util.OptionalInt;
 import java.util.stream.*;
 
-public class Main {
+public class MainOLd {
     public static void main(String[] args) {
         List<Integer> nums = List.of(3, 5, 9, 10, 8);
         
