@@ -21,3 +21,7 @@ FUNCTION
 CONSUMER
 SUPPLIER
 PREDICATE
+
+Aula 14/06/2024
+
+threads e gradle
